@@ -7,7 +7,7 @@ import time
 
 def openall():
     URLs = text.get("1.0","end")            #take all text from textbox except 'EoF' & '\n'
-    if (URLs[-1] == "\n"):                  
+    if (URLs[-1] == "\n"):
         URLs = URLs[:-1]
     amount = URLs.count("\n")               #count URL amount
     urlList = URLs.split("\n")              #split all text and make as a list that every element is one URL
